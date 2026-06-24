@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>checking percentage</title>
+</head>
+<body>
+<script>
+	function examResult(){
+	let marks = Number(document.getElementById("percent").value);
+	let result = 0;
+	if(marks>=60){
+		result = "you are FIRST Division passed";
+	}
+	else if(marks>=45 && marks<60){
+		result = "you are SECOND Division passed"
+	}
+	else if(marks>=33 && marks<45){
+		result = "you are THIRD Division passed"
+		}
+	else{
+		result = "you are failed"
+	}
+	console.log(result);
+	alert("your final result is that :" +result);
+}
+
+</script>
+<h2 style= "color:blue" >WELCOME TO MY SCORE CHEKING PORTAL</h2>
+
+<label>Inter your percentage</label>
+<input type = "text" id= "percent"></input>
+<button onclick="examResult()">Result</button>
+</body>
+</html>
