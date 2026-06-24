@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY first calculator</title>
+
+
+
+</head>
+<body>
+<script>
+	function addNumbers(){
+	let firstNum = Number(document.getElementById('number1').value);
+	let secodNum = Number(document.getElementById('number2').value);
+	let result = firstNum + secodNum;
+	alert('Addition of two number is: '+ result);
+	
+}
+</script>
+<h3>MY calculator</h3>
+<label>Inter your first Number:</label>
+<input type="text" id="number1"></input>
+<br>
+<br>
+<label>Inter your second Number:</label>
+<input type="text" id="number2"></input>
+<br>
+
+<button onclick='addNumbers()'>Add</button>
+
+<button >subtraction</button>
+<br>
+<br>
+
+<button>multiplication</button>
+<button>division</button>
+<br>
+<br>
+<input type="reset" value="Reset">
+</body>
+</html>
+
+
