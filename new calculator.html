@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculator new 2.0</title>
+</head>
+<body style="background-color:powderblue">
+<script>
+	function myCalculator(operator){
+		let firstNum = Number(document.getElementById('number 1').value);
+		let secodNum = Number(document.getElementById('number 2').value);
+		let result = 0;
+		if(operator == '+'){
+		result = firstNum + secodNum; 
+		console.log("inside addition")
+		}
+		else if (operator == '-'){
+		result = firstNum - secodNum;
+		console.log("inside subtraction")
+		}
+		else if (operator == '*'){
+		result = firstNum * secodNum;
+		console.log("inside multiplication")
+		}
+		else{
+		result = firstNum / secodNum;
+		console.log("inside division")
+		
+		}
+		console.log(result)
+		alert("This is the result after Calculating: " +result);
+
+
+
+	}
+</script>
+<h3 style="background-color:LightGray"> second calculator</h3>
+<label>Enter your 1<sup>st</sup> number: </label>
+<input type="text" id="number 1"></input>
+<br>
+<label>Enter your 2<sup>nd</sup> number: </label>	
+
+<input type="text" id="number 2"></input>
+<br>
+<button onclick="myCalculator('+')" style="background-color: blue; color: white">Addition</button>	<button onclick="myCalculator('-')" style="background-color: blue; color: white;">Subtraction</button>
+<br>
+<br>
+<button onclick="myCalculator('*')" style="background-color: blue; color: white" >Multiplication</button>  <button onclick="myCalculator('/')" style="background-color: blue; color: white">Division</button>	
+<br>
+<br> 
+<button onclick="myCalculator()" style="background-color: green; color: white">Answer</button>
+</body>
+</html>
