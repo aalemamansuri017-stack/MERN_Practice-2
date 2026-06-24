@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY second web page</title>
+</head>
+<body>
+<script>
+
+	function displayDetail(){
+		let myName = document.getElementById('name').value;
+		let age = document.getElementById('age').value;
+		let email = document.getElementById('email').value;
+		let city = document.getElementById('city').value;
+		alert('Your name is '+ myName +' and your age is '+ age+' your email id is '+email+ ' you are live in '+city);
+		}
+</script>
+<label>Your Name:</label>
+<input type="text" id="name"></input>
+<br>
+<label>Your Age:</label>
+<input type="text" id="age"></input>
+<br>
+<label>Your Email:</label>
+<input type="text" id="email"></input>
+<br>
+<label>Your City:</label>
+<input type="text" id="city"></input>
+<br>
+<button onClick="displayDetail()">result</button>
+
+
+</body>
+</html>
